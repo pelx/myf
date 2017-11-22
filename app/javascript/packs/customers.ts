@@ -95,7 +95,7 @@ class CustomerSearchComponent {
    
    search($event) {
      this.keywords = $event;
-     if (self.keywords.length < 3) {
+     if (this.keywords.length < 3) {
        return;
      } 
     this.http.get("/customers.json?keywords=" + this.keywords) 
