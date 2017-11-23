@@ -1,8 +1,4 @@
-const { environment } = require('@rails/webpacker');
-
-module.exports = environment;
-
-environment.loaders.set('html', {
+module.exports = {
   test: /\.html$/,
   use: [{
     loader: 'html-loader',
@@ -14,5 +10,4 @@ environment.loaders.set('html', {
       customAttrAssign: [ /\)?\]?=/ ]
     }
   }]
-});
-
+}
